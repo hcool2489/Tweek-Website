@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!--
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+AUTHOR 	: Harshit
+PROJECT : Tweek16
+VERSION : 1.0
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-->
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html">
+  <title>Tweek : Registration</title>
+  <meta name="author" content="Harshit">
+  	<link rel="shortcut icon" type="image/x-icon" href="icon.ico">
+  <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" media="all" href="css/switchery.min.css">
+  <script type="text/javascript" src="js/switchery.min.js"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+  
+  <h1>Online Registration for Tweek 2016</h1>
+  
+  <form action="submit.php" method="post">
+  <div class="col-2">
+    <label>
+      School Name <img align="right" src="req.png" width="10px">
+      <input placeholder="What is your School's name?" name="school_name" required tabindex="1">
+    </label>
+  </div>
+  <div class="col-2">
+    <label>
+      School Phone <img align="right" src="req.png" width="10px">
+      <input type="tel" size="11" placeholder="School's Phone Number" name="school_phone" required tabindex="2">
+    </label>
+  </div>
+  
+  <div class="col-3">
+    <label>
+      Teacher In-charge <img align="right" src="req.png" width="10px">
+      <input placeholder="Name of the Teacher in-charge?" name="teacher_name" required tabindex="3">
+    </label>
+  </div>
+  <div class="col-3">
+    <label>
+      Teacher's Phone <img align="right" src="req.png" width="10px">
+      <input type="tel" size="11" placeholder="What is phone number of teacher in-charge?" name="teacher_phone" required tabindex="4">
+    </label>
+  </div>
+  <div class="col-3">
+    <label>
+      Teacher's Email <img align="right" src="req.png" width="10px">
+      <input type="email" placeholder="Email Address of teacher in-charge?" name="teacher_email" required tabindex="5">
+    </label>
+  </div>
+  <br><div>
+  <label><u>Participants</u></label>
+  </div>
+  <br>
+  <div class="col-3">
+    <label>
+      Quiz
+	<input placeholder="Participant 1 Name" name="p_q1" tabindex="6">
+    </label>
+  </div>
+  <div class="col-3">
+  <label>
+  <input placeholder="Participant 2 Name" name="p_q2" tabindex="7">
+	</label>
+	</div>
+	<div class="col-3">
+	<label>
+  <input placeholder="Participant 3 Name" name="p_q3" tabindex="8">
+  </label>
+  </div>
+   <div class="col-2">
+    <label>
+      Audio Editing/Mixing
+	<input placeholder="Participant 1 Name" name="p_mm1" tabindex="9">
+    </label>
+  </div>
+  <div class="col-2">
+    <label>
+	<input placeholder="Participant 2 Name" name="p_mm2" tabindex="10">
+	</label>
+</div>
+   <div class="col-3">
+    <label>
+      Photography
+	<input placeholder="Participant Name" name="p_pg" tabindex="11">
+    </label>
+  </div>
+    <div class="col-3">
+    <label>
+      Photoshop
+      <input placeholder="Participant Name" name="p_p" tabindex="12">
+    </label>
+  </div>
+  <div class="col-3">
+    <label>
+      Gaming
+	<input placeholder="Participant Name" name="p_g" tabindex="13">
+    </label>
+  </div>
+   <div class="col-2">
+    <label>
+      Coding
+	<input placeholder="Participant 1 Name" name="p_c1" tabindex="14">
+    </label>
+  </div>
+   <div class="col-2">
+    <label>
+	<input placeholder="Participant 2 Name" name="p_c2" tabindex="15">
+    </label>
+  </div>
+  
+  <div class="col-3"></div>
+  <div class="col-3"></div>
+  <div class="col-3">
+    <label>Agree Not to cheat or try to Hack our servers</label>
+    <center style="position:relative; margin-bottom:8px;"><input type="checkbox" name="checkbox" value="check" class="js-switch"></center>
+  </div>
+  
+  <div class="col-submit">
+    <button class="submitbtn" onclick=" if(!this.form.checkbox.checked){alert('You must agree to the terms first.'); return false;}">Submit</button>
+  </div>
+  
+  </form>
+  </div>
+<script type="text/javascript">
+var elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
+
+elems.forEach(function(html) {
+  var switchery = new Switchery(html);
+});
+</script>
+</body>
+</html>
